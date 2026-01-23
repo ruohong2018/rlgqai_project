@@ -1,0 +1,51 @@
+# RLGQAI Project Requirements
+# 利用强化学习为生成式量子AI系统自动调优
+
+# Deep Learning Framework
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Quantum Computing Libraries
+qiskit>=0.45.0
+qiskit-aer>=0.12.0
+qiskit-ibmq-provider>=0.20.0
+cirq>=1.2.0
+
+# Numerical Computing
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Data Processing and Visualization
+pandas>=2.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Machine Learning Utilities
+scikit-learn>=1.3.0
+
+# Progress Bar
+tqdm>=4.65.0
+
+# Configuration
+pyyaml>=6.0
+
+# Logging
+tensorboard>=2.13.0
+wandb>=0.15.0
+
+# Utilities
+joblib>=1.3.0
+
+# Testing (optional)
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# Code Quality (optional)
+black>=23.0.0
+flake8>=6.0.0
+pylint>=2.17.0
+
+# Documentation (optional)
+sphinx>=7.0.0
+sphinx-rtd-theme>=1.3.0
+
