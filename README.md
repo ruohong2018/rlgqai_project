@@ -6,16 +6,16 @@
 
 ---
 
-## 📋 项目概述
+## 项目概述
 
 RLGQAI是一个端到端的自动调优系统，针对生成式量子AI模型（如QVGAN、QBM、QVAE）的52个参数进行智能优化，实现：
 
-- ⚡ **收敛速度提升 3.8倍**
-- 📈 **生成质量提升 67.3%**
-- 💰 **资源效率提升 58.9%**
-- ⏱️ **调优时间减少 89.2%**（相比网格搜索）
+- **收敛速度提升 3.8倍**
+- **生成质量提升 67.3%**
+- **资源效率提升 58.9%**
+- **调优时间减少 89.2%**（相比网格搜索）
 
-## 🏗️ 系统架构
+## 系统架构
 
 ```
 RLGQAI System
@@ -33,7 +33,7 @@ RLGQAI System
     └── 模拟量子生成模型训练
 ```
 
-## 🚀 快速开始
+## 快速开始
 
 ### 安装依赖
 
@@ -70,7 +70,7 @@ python train.py --load-checkpoint checkpoints/episode_500
 python train.py --eval-only --load-checkpoint checkpoints/final
 ```
 
-## 📦 项目结构
+## 项目结构
 
 ```
 rlgqai_project/
@@ -95,7 +95,7 @@ rlgqai_project/
 └── README.md                  # 项目文档
 ```
 
-## 🔧 核心算法：QC-MADDPG
+## 核心算法：QC-MADDPG
 
 ### 算法特点
 
@@ -112,7 +112,7 @@ rlgqai_project/
 - **批归一化**：加速收敛
 - **注意力机制**：处理量子比特状态聚合
 
-## 📊 参数空间
+## 参数空间
 
 ### 量子层参数 (18维)
 - 电路深度、纠缠拓扑、参数化门角度、初始化策略、测量基等
@@ -125,7 +125,7 @@ rlgqai_project/
 
 **总计：52个可调参数**
 
-## 📈 性能指标
+## 性能指标
 
 系统优化三个核心指标的加权组合：
 
@@ -135,7 +135,7 @@ rlgqai_project/
 
 综合性能：`P = w_S * S + w_Q * Q + w_E * E`
 
-## 🎯 奖励函数
+## 奖励函数
 
 ```python
 # 指数奖励函数
@@ -149,7 +149,7 @@ penalty_stability = -λ_S * max(0, ||action|| - threshold)
 total_reward = reward + penalty_resource + penalty_stability
 ```
 
-## 🔬 实验结果
+## 实验结果
 
 ### 基准测试（QVGAN on MNIST-4）
 
@@ -166,7 +166,7 @@ total_reward = reward + penalty_resource + penalty_stability
 - 保真度提升：**23.4%**（0.723 → 0.892）
 - 量子资源消耗减少：**64.4%**
 
-## 🛠️ 配置说明
+## 配置说明
 
 主要配置项在 `config/config.py` 中：
 
@@ -193,7 +193,7 @@ W_QUALITY = 0.4             # 生成质量权重
 W_EFFICIENCY = 0.2          # 资源效率权重
 ```
 
-## 📚 参数重要性分析
+## 参数重要性分析
 
 根据量子Fisher信息矩阵和Shapley值方法，Top-10重要参数：
 
@@ -210,7 +210,7 @@ W_EFFICIENCY = 0.2          # 资源效率权重
 
 💡 **提示**：仅调优Top-20参数即可达到全参数调优**97.3%**的效果！
 
-## 🧪 测试
+## 测试
 
 ```bash
 # 运行单元测试
@@ -222,28 +222,28 @@ python -m networks.actor_network
 python -m utils.replay_buffer
 ```
 
-## 📖 引用
+## 引用
 
 如果您在研究中使用了本项目，请引用：
 
 ```bibtex
-@article{rlgqai2024,
+@article{rlgqai2025,
   title={RLGQAI: Reinforcement Learning for Generative Quantum AI Auto-Tuning},
-  author={Your Name},
+  author={Amy},
   journal={VLDB},
-  year={2024}
+  year={2025}
 }
 ```
 
-## 🤝 贡献
+## 贡献
 
 欢迎提交Issue和Pull Request！
 
-## 📄 许可证
+## 许可证
 
 MIT License
 
-## 🙏 致谢
+## 致谢
 
 本项目基于以下优秀工作：
 - MADDPG算法
@@ -256,9 +256,9 @@ MIT License
 
 - 项目主页: [GitHub Repository]
 - 问题反馈: [Issues]
-- 邮件: your.email@example.com
+- 邮件: 529504056@qq.com
 
 ---
 
-最后更新：2024年11月
+最后更新：2025年11月
 
